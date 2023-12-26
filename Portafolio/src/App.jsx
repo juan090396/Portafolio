@@ -5,7 +5,12 @@ function App() {
 
   return (
     <div className="container" >
-      <nav className= " "  > aqui va el modo oscuro y la preferencia de idioma </nav>
+      <nav className= " "  > aqui va el modo oscuro y la preferencia de idioma
+
+      <button></button>
+      <button></button>
+
+      </nav>
 
 
       <div>

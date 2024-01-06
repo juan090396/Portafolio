@@ -6,8 +6,8 @@ const Footer = () => {
     return (
     
     <body className=' bg-green-300 flex-col md:flex-row justify-centerp-4'>
-    
-        <div className=" md:mb-0 text-center p-4 ">
+            <h4 className="md:mb-0 text-center p-4">Contactame:</h4>
+        <div className=" md:mb-0 text-center pt-2 pb-2 ">
             <h5 className="">Redes Sociales</h5>
         </div >
 

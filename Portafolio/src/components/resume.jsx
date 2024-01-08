@@ -5,15 +5,15 @@ const Resume = () => {
     return (
     
     
-        <div className='   flex-col md:flex-row justify-center p-4   '>
-        <div className="mb-4 md:mb-0 text-center m-4 p-4 ">
-          <h1 className="text-3xl font-bold underline">Juan Figueroa</h1>
+        <div className='   flex-col md:flex-row justify-center    '>
+        <div className=" mb-4 md:mb-0 text-center m-4 p-10 ">
+          <h1 className=" text-8xl font-bold underline font-serif  ">Juan Figueroa</h1>
         </div>
       
-        <div className="md:ml-4 text-center m-4 p-4 ">
-          <h2 className="text-2xl font-bold underline">Web Developer</h2>
+        <div className="md:ml-4 text-center m-4 p-4 pt-10 ">
+          <h2 className="text-4xl font-bold underline font-serif">Web Developer</h2>
           
-          <div className=" flex justify-center gap-2 mt-2 m-5 p-5 ">
+          <div className=" flex justify-center gap-2 mt-2 m-5 p-5 pt-10 ">
             <img src='../../public/HTML.png' alt='HTML5' ></img>
             <img src='../../public/CSS.png' alt='css' ></img>
             <img src='../../public/javascript.png' alt='javascript' ></img>
@@ -24,7 +24,7 @@ const Resume = () => {
           </div>
         </div>
       
-        <div className="mt-4 md:ml-4 mb-4 text-center  ">
+        <div className="mt-4 md:ml-4 mb-5 pt-5 pb-8 text-center  ">
           <a href='https://drive.google.com/file/d/1udyLFLfZGYYdWKAn1EllJDgJbY7NpsIp/view?usp=drive_link' target="_blank" rel="noopener noreferrer" >
           <button className=" mr-2 mb-2 md:mb-0 px-2 py-3 w-40 h-14 
           border-none rounded-3xl  font-semibold text-base 

@@ -4,17 +4,88 @@ import React from 'react';
 const Projects = () => {
     return (
     
-        <div className='   flex-col md:flex-row justify-center p-4'>
+        <section className='p-4'>
         
-            <div className="mb-4 md:mb-0 text-center m-4 p-4 ">
-            <h2 className="text-3xl font-bold underline">Proyectos Personales</h2>
+            <div className="mb-4 text-center ">
+                <h2 className="text-3xl font-bold underline">Proyectos Personales</h2>
+            
+            <div className='flex flex-wrap justify-center'>
+
+            <div className='mb-4 md:mb-0 text-center m-4 p-5'>
+               
+                <div>
+                    
+                    <div>
+
+                        <div>
+                            <div>
+                                aqui va un Proyectos
+                                <h4>Ztype clon</h4>
+                            </div>
+                
+                            <p>Descripcion del proyecto</p>
+                
+                            <div>
+                            Enlaces:
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            
             </div >
 
-            <div className='mb-4 md:mb-0 text-center m-4 p-4'>
-                <p>aqui van los Proyectos</p>
+            <div className='mb-4 md:mb-0 text-center m-4 p-5 '>
+               
+                <div>
+                    
+                    <div>
+
+                        <div>
+                            <div>
+                                aqui va un Proyectos
+                                <h4>Ztype clon</h4>
+                            </div>
+                
+                            <p>Clon Spotify</p>
+                
+                            <div>
+                            Enlaces:
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div >
+
+            <div className='mb-4 md:mb-0 text-center m-4 p-5'>
+               
+                <div>
+                    
+                    <div>
+
+                        <div>
+                            <div>
+                                aqui va un Proyectos
+                                <h4>Ecommerce  </h4>
+                            </div>
+                
+                            <p>Descripcion del proyecto</p>
+                
+                            <div>
+                            Enlaces:
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div >
+            </div>
             </div>
          
-        </div>
+        </section>
     );
 }
 

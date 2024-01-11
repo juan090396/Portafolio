@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import * as React from 'react';
+import { useState, useEffect } from "react";
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -55,16 +56,40 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 
-
 const ToggleThemeButton = () => {
   
+
+  const [theme, setTheme] = useState(() => {
+    if (window.matchMedia('(prefers-color-scheme:dark)').matches) {
+      return 'dark';
+    } else{
+      return 'light'
+    }
+  });
+
+
+  useEffect(() => {
+    if (theme == "dark"){
+      document.querySelector('html').classList.add('dark')} else{
+        document.querySelector('html').classList.remove('dark');
+      }
+    
+  },[theme]);
+  
+  const handleChangeTheme = () => {
+    setTheme(prevTheme => prevTheme =='light'? "dark" : "light" );
+    console.log(document.querySelector('html').classList);
+  }
+
   return (
     <div>
+    <button onClick={handleChangeTheme} >
       <FormGroup>
         <FormControlLabel 
           control={<MaterialUISwitch sx={{ m: 0, p:1}} defaultChecked />}
         />
       </FormGroup>
+    </button>
     </div>
   );
 };

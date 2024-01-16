@@ -78,7 +78,6 @@ const ToggleThemeButton = () => {
   
   const handleChangeTheme = () => {
     setTheme(prevTheme => prevTheme =='light'? "dark" : "light" );
-    console.log(document.querySelector('html').classList);
   }
 
   return (

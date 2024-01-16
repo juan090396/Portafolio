@@ -8,21 +8,23 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 
-const Projects = () => {
+// eslint-disable-next-line react/prop-types
+const Projects = ({mostrarEsp}) => {
     return (
     
-        <section className=' dark:bg-slate-950 p-4'>
+        <section className=' dark:bg-slate-950 p-5 pt-10 pb-10'>
         
-            <div className="text-center ">
+            <div className="text-center pb-5 ">
             
-                <h2 className="text-3xl font-bold underline p-5 m-2 dark:text-white ">Proyectos Personales</h2>
+                {mostrarEsp? (<h2 className="text-3xl font-bold underline dark:text-white p-5 ">Proyectos Personales</h2>):
+                (<h2 className="text-3xl font-bold underline p-5 m-2 dark:text-white ">Personal Projects</h2>)}
             
             <div className=' flex flex-wrap min:flex-col  justify-center'>
 
                 <div className=' mb-4 md:mb-0 text-center m-4 p-5 border-4 rounded-lg hover:opacity-80 hover:border-green-600  '>
                
                 <Card sx={{ maxWidth: 345 }}>
-                    <div className='  flex items-center justify-center p-5 m-5 ml-10  w-60 h-40' >
+                    <div className='  flex items-center justify-center p-5 m-5 ml-10  w-56  h-40' >
                     <CardMedia
                     className='border-2 rounded-full'
                     component="img"
@@ -31,17 +33,20 @@ const Projects = () => {
                     </div>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                        Z Type Game
+                        Z Type
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                        Clon de juego z type para mejorar velocidad de typeo en teclado con palabras en español e ingles.
-                        Listado de tecnologias utilizadas: React.
+                        {mostrarEsp?(<p>Clon del juego z type para mejorar velocidad de typeo en teclado con palabras en español e ingles.
+                        Listado de tecnologias utilizadas: React.</p>)
+                        :(<p>Clone of the Z Type game to improve typing speed on the keyboard with words in both Spanish and English.
+                            List of technologies used: React.</p>)}
                         </Typography>
                     </CardContent>
 
                     <div className='flex items-center justify-center' >
                         <CardActions>
-                            <a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>
+                            {mostrarEsp?(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>)
+                            :(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Try it</Button> </a>)}
                         </CardActions>
                     </div>
                 </Card>
@@ -69,7 +74,8 @@ const Projects = () => {
 
                     <div className='flex items-center justify-center' >
                         <CardActions>
-                            <a className='border-4 rounded-full bg-green-50 ' href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>
+                        {mostrarEsp?(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>)
+                            :(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Try it</Button> </a>)}
                         </CardActions>
                     </div>
                 </Card>
@@ -97,7 +103,8 @@ const Projects = () => {
 
                    <div className='flex items-center justify-center' >
                        <CardActions>
-                           <a className='border-4 rounded-full bg-green-50 ' href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>
+                       {mostrarEsp?(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Probar</Button> </a>)
+                            :(<a className='border-4 rounded-full bg-green-50 '  href='' target="_blank" rel="noopener noreferrer"  > <Button size="small">Try it</Button> </a>)}
                        </CardActions>
                    </div>
                </Card>
